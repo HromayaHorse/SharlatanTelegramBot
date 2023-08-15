@@ -27,7 +27,7 @@ bot.command('start', async ctx => {
 
 bot.action('magicball', async ctx => {
     await bot.telegram.sendPhoto(ctx.chat.id, "https://img.freepik.com/premium-vector/mystic-ball-with-pixel-art-style_475147-241.jpg")
-    await bot.telegram.sendMessage(ctx.chat.id, 'Загадай на что ты хочешь узнать ответ и потряси шар', {
+    await bot.telegram.sendMessage(ctx.chat.id, 'Загадай на что ты хочешь получить ответ и потряси шар', {
         reply_markup: {
             inline_keyboard: [
                 [{  
