@@ -4,7 +4,7 @@ const { Telegraf } = require('telegraf');
 const Prediction = require('./api');
 const api = new Prediction();
 
-const bot = new Telegraf('5992286728:AAGSoTTi85R5ehIS_BXgcEl77Zypm_hfX6E');
+const bot = new Telegraf(token);
 
 bot.command('start', async ctx => {
     console.log(ctx.from)
